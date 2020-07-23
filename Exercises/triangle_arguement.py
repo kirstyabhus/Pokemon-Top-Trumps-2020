@@ -12,7 +12,7 @@ def triangle(side_length, colour):
     turtle.endfill()
 
 
-triangle(100, 'orange')
+triangle(100, 'o range')
 triangle(90, 'red')
 triangle(80, 'blue')
 triangle(70, 'pink')
