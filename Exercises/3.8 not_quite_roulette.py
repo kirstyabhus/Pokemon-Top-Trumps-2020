@@ -21,7 +21,9 @@ random_colour = colour_picker()
 bet_amount = float(input("How much do you want to bet: £"))
 chosen_colour = input("Choose a colour (red/black): ")
 chosen_number = int(input("Choose a number between 1 and 100: "))
-print("\n")
+print("")
+
+print("Random number = {}   Random colour = {}\n".format(random_number, random_colour))
 
 total_amount = 0
 
