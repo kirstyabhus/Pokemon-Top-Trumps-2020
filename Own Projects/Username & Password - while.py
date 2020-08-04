@@ -4,13 +4,13 @@ user = input("Username: ")
 password = input("Password: ")
 print(" ")
 
-u1 = 0
-
 user_first_letter = user[0]  # stores the first character of the username ([0] means first character)
 is_ufl_upper = user_first_letter.isupper()  # 'isupper()' checks if value stored in 'user_first_letter' is uppercase
 
 # checks if first character of username contains the english alphabet [a-zA-Z]
 EN_alpha = re.search('[a-zA-Z]', user_first_letter)
+
+u1 = 0
 
 # this 'while' checks & outputs whether the username is valid
 while True:
