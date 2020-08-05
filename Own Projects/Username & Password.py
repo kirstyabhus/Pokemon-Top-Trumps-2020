@@ -33,11 +33,11 @@ if not is_ufl_upper or not EN_alpha:  # meaning if first character of user is no
 
 if len(password) < 8:
     print("invalid password.")
-    print("password must be between 6-15 characters")
+    print("password must be between 8-256 characters")
     print(" ")
-elif len(user) > 256:
+elif len(password) > 256:
     print("invalid password.")
-    print("password must be between 6-15 characters")
+    print("password must be between 8-256 characters")
     print(" ")
 
 # DONE password and username can not have any types of parentheses or white spaces.
