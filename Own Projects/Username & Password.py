@@ -16,7 +16,7 @@ elif len(user) > 15:
     print("username must be between 6-15 characters")
     print(" ")
 
-# NOT DONE username must start with uppercase english alphabet letter
+#  DONE username must start with uppercase english alphabet letter
 
 user_first_letter = user[0]  # stores the first character of the username ([0] means first character)
 is_ufl_upper = user_first_letter.isupper()  # 'isupper()' checks if value stored in 'user_first_letter' is uppercase
