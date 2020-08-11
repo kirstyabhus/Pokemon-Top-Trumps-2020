@@ -35,3 +35,5 @@ elif match == 6:
     print("6 matches! \nPrize = £10000")
 elif match == 7:
     print("7 matches! \nPrize = £1000000")
+else:
+    print("No matches. Better luck next time!")
