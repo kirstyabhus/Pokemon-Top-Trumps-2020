@@ -20,14 +20,26 @@ def random_pokemon():
 
 
 def run():
+    # displays the stats for the users' card
     my_pokemon = random_pokemon()
+    print('Your card:')
+    print('NAME      {}'.format(my_pokemon['name']))
+    print('ID        {}'.format(my_pokemon['id']))
+    print('WEIGHT    {}'.format(my_pokemon['height']))
+    print('HEIGHT    {}'.format(my_pokemon['weight']))
+    print('')
 
-    print('Your pokemon is {}'.format(my_pokemon['name']))
-    stat_choice = input('Which stat do you want to use? (id, height, weight) ')
+    stat_choice = input('Which stat do you want to use? (id, height or weight) ')
+    print('')
 
     opponent_pokemon = random_pokemon()
 
-    print('The opponent chose {}'.format(opponent_pokemon['name']))
+    print('Opponent card:')
+    print('NAME      {}'.format(opponent_pokemon['name']))
+    print('ID        {}'.format(opponent_pokemon['id']))
+    print('WEIGHT    {}'.format(opponent_pokemon['height']))
+    print('HEIGHT    {}'.format(opponent_pokemon['weight']))
+    print('')
 
     my_stat = my_pokemon[stat_choice]
     opponent_stat = opponent_pokemon[stat_choice]

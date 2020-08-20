@@ -19,4 +19,5 @@ poke_data = {'Name': name, 'Moves': moves}
 pokemon_values.append(poke_data)
 
 with open ('pokemon.txt', '+w') as text_file:
-   # text_file.write(pokemon_values)
+    #text_file.write(pokemon_values)
+    print(pokemon_values)
