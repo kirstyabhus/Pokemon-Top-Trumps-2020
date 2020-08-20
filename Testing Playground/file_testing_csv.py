@@ -9,3 +9,4 @@ with open('team.csv', 'w+') as csv_file:
     spreadsheet = csv.DictWriter(csv_file, fieldnames=field_names)
     spreadsheet.writeheader()
     spreadsheet.writerows(data)
+
