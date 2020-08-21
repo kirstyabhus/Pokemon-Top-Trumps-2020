@@ -75,8 +75,6 @@ def run():
         print('ID        {}'.format(my_pokemon3['id']))
         print('WEIGHT    {}'.format(my_pokemon3['height']))
         print('HEIGHT    {}'.format(my_pokemon3['weight']))
-    else:
-        card_pick = input('Which card do you want to use? (1, 2 or 3) ')
 
     print('')
     stat_choice = input('Which stat do you want to use? (id, height or weight) ')
