@@ -20,11 +20,12 @@ def random_pokemon():
 
 
 def run():
-    # displays the stats for the users' card
+    # randomly generates 3 cards
     my_pokemon1 = random_pokemon()
     my_pokemon2 = random_pokemon()
     my_pokemon3 = random_pokemon()
 
+    # makes sure that none of the randomly generated cards are the same
     if my_pokemon1 == my_pokemon2 or my_pokemon1 == my_pokemon3:
         my_pokemon1 = random_pokemon()
     elif my_pokemon2 == my_pokemon3 or my_pokemon2 == my_pokemon1:
@@ -32,6 +33,7 @@ def run():
     elif my_pokemon3 == my_pokemon1 or my_pokemon3 == my_pokemon2:
         my_pokemon3 = random_pokemon()
 
+    # outputs a choice of 3 random cards for the user to choose from, with the stats name, id, height and weight
     print('Your cards:')
     print('CARD 1')
     print('NAME      {}'.format(my_pokemon1['name']))
@@ -52,8 +54,11 @@ def run():
     print('HEIGHT    {}'.format(my_pokemon3['weight']))
     print('')
 
+    # asks the user which card from the randomly generated they want to pick
     card_pick = int(input('Which card do you want to use? (1, 2 or 3) '))
     print('')
+
+    # outputs the stats of the card they have chosen
     if card_pick == 1:
         my_pokemon = my_pokemon1
         print('Your card:')
@@ -76,10 +81,12 @@ def run():
         print('WEIGHT    {}'.format(my_pokemon3['height']))
         print('HEIGHT    {}'.format(my_pokemon3['weight']))
 
+    # asks the user which stat they want to use
     print('')
     stat_choice = input('Which stat do you want to use? (id, height or weight) ')
     print('')
 
+    # randomly generates a card for the opponent, and outputs the stats for the card
     opponent_pokemon = random_pokemon()
 
     print('Opponent card:')
