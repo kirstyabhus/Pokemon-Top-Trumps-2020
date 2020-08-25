@@ -49,6 +49,7 @@ def opponent_win():
         my_pokemon3 = random_pokemon()
 
     # outputs a choice of 3 random cards for the user to choose from, with the stats name, id, height and weight
+    print('NEW ROUND')
     print('Your cards:')
     print('CARD 1')
     print('NAME      {}'.format(my_pokemon1['name']))
@@ -101,7 +102,7 @@ def opponent_win():
     print('')
     print('The opponent has chosen the stat: {}'.format(stat_choice))
     print('')
-    time.sleep(5) # 5 second delay
+    time.sleep(5)  # 5 second delay
 
     print('Opponent card:')
     print('NAME      {}'.format(opponent_pokemon['name']))
@@ -124,6 +125,7 @@ def opponent_win():
         print('Draw!')
 
 
+# round for if user wins
 def run():
     # randomly generates 3 cards
     my_pokemon1 = random_pokemon()
@@ -139,6 +141,7 @@ def run():
         my_pokemon3 = random_pokemon()
 
     # outputs a choice of 3 random cards for the user to choose from, with the stats name, id, height and weight
+    print('NEW ROUND')
     print('Your cards:')
     print('CARD 1')
     print('NAME      {}'.format(my_pokemon1['name']))
