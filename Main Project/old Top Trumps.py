@@ -95,7 +95,7 @@ def run():
     print('WEIGHT    {}'.format(opponent_pokemon['height']))
     print('HEIGHT    {}'.format(opponent_pokemon['weight']))
     print('')
-
+    time.sleep(2)
     my_stat = my_pokemon[stat_choice]
     opponent_stat = opponent_pokemon[stat_choice]
     if my_stat > opponent_stat:
