@@ -210,8 +210,8 @@ def run():
     print('Opponent card:')
     print('NAME      {}'.format(opponent_pokemon['name']))
     print('ID        {}'.format(opponent_pokemon['id']))
-    print('WEIGHT    {}'.format(opponent_pokemon['height']))
-    print('HEIGHT    {}'.format(opponent_pokemon['weight']))
+    print('WEIGHT    {}'.format(opponent_pokemon['weight']))
+    print('HEIGHT    {}'.format(opponent_pokemon['height']))
     print('')
     time.sleep(2)
 
